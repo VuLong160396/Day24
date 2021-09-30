@@ -12,7 +12,6 @@ height_input = Entry(window)
 height_input.place(x=100, y=70)
 height_input.get()
 
-
 #Entry Weight
 label2 = Label(window, text='Weight(kg):',font='Times 15')
 label2.place(x=0, y=40)
@@ -58,7 +57,7 @@ def print_result():
 #Button Calc BMI
 frame_button = Frame(window) 
 frame_button.place(x=100, y=100)
-button1 = Button(frame_button, text= 'BMI Calculate', bg = 'teal', fg='white', command=print_result).pack()
+button1 = Button(frame_button, text= 'BMI Calculate', background = 'teal', foreground='white', command=print_result).pack()
 
 #Result
 result = Label(window,text='Result: 0 ',font='Times 15')
